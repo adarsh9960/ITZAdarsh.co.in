@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Designing | ITZ Adarsh</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f1a;
+      color: #ffffff;
+    }
+
+    .header1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 40px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 46px;
+      margin-bottom: 20px;
+      color: #00ffcc;
+      text-align: center;
+    }
+
+    p.intro {
+      font-size: 18px;
+      color: #cccccc;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #1a1a2e;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 15px #00ffcc30;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px #00ffcc60;
+    }
+
+    .card h3 {
+      color: #00ffcc;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #bbbbbb;
+    }
+
+    .cta {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .cta a {
+      background-color: #00ffcc;
+      color: #0f0f1a;
+      padding: 15px 35px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      background-color: #00ccaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header1">
+      <div style="display: flex; align-items: center;">
+        <img src="photos/logo.webp" alt="ITZ Adarsh Logo" class="logo" />
+        <h1>ITZ Adarsh</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="payment.html">Payment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Website Designing</h1>
+    <p class="intro">We don’t just design websites — we create digital experiences that leave a lasting impression.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Modern & Responsive</h3>
+        <p>We build clean, fast, and responsive websites that look stunning on any device — mobile, tablet, or desktop.</p>
+      </div>
+      <div class="card">
+        <h3>User-Centered Design</h3>
+        <p>Every element is crafted to provide the best experience for your visitors, increasing engagement and conversions.</p>
+      </div>
+      <div class="card">
+        <h3>SEO Optimized</h3>
+        <p>We design with visibility in mind — making sure your site is Google-friendly and easy to find.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Design</h3>
+        <p>No templates here — we deliver tailor-made designs that reflect your brand's unique personality and goals.</p>
+      </div>
+      <div class="card">
+        <h3>Fast Loading Speed</h3>
+        <p>Our code is lightweight and optimized, ensuring quick load times and a smooth user experience.</p>
+      </div>
+      <div class="card">
+        <h3>Affordable Packages</h3>
+        <p>Whether you're a startup or an established brand, we offer flexible pricing that fits your budget.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="tel:+919960416025">📞 Let's Discuss Your Website</a>
+    </div>
+  </div>
+
+</body>
+<footer style="background-color: #0f0f1a; color: #ffffff; font-family: 'Segoe UI', sans-serif; padding: 80px 20px 60px 20px; font-size: 11px;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+
+    <!-- Left Side -->
+    <div style="flex: 1 1 250px; min-width: 250px;">
+      <h2 style="color: #00f9ff; font-size: 24px;">ITZAdarsh</h2>
+      <p style="margin: 15px 0;">
+        ITZAdarsh is a performance-driven digital agency offering websites, marketing & SEO services at India's most affordable rates.
+      </p>
+    </div>
+
+    <!-- Company Links -->
+    <div style="flex: 1 1 150px; min-width: 150px;">
+      <h4 style="color: #00f9ff; margin-bottom: 15px;">Company</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="about us.html" style="color: #ffffff; text-decoration: none;">About Us</a></li>
+        <li><a href="contact.html" style="color: #ffffff; text-decoration: none;">Contact Us</a></li>
+        <li><a href="index.html" style="color: #ffffff; text-decoration: none;">Portfolio</a></li>
+        <li><a href="privacy-policy.html" style="color: #ffffff; text-decoration: none;">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div style="flex: 1 1 150px; min-width: 150px;">
+      <h4 style="color: #00f9ff; margin-bottom: 15px;">Services</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: #ffffff; text-decoration: none; margin-bottom: 50px;">SEO Services</a></li>
+        <li><a href="#" style="color: #ffffff; text-decoration: none; margin-bottom: 5px;">Web Design</a></li>
+        <li><a href="#" style="color: #ffffff; text-decoration: none; margin-bottom: 5px;">Facebook Ads</a></li>
+        <li><a href="#" style="color: #ffffff; text-decoration: none; margin-bottom: 5px;">Content Marketing</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div style="flex: 1 1 180px; min-width: 180px;">
+      <h4 style="color: #00f9ff; margin-top: 20px;">Get Connected</h4>
+      <div style="margin-top: 10px; display: flex; gap: 10px;">
+        <a href="https://facebook.com" target="_blank"><img src="photos/facebook.png" alt="Facebook" style="width: 20px;"></a>
+        <a href="https://instagram.com" target="_blank"><img src="photos/instagram logo" alt="Instagram" style="width: 20px;"></a>
+        <a href="https://youtube.com" target="_blank"><img src="photos/Youtube.png" alt="YouTube" style="width: 20px;"></a>
+        <a href="https://twitter.com" target="_blank"><img src="photos/twitter logo.png" alt="Twitter" style="width: 20px;"></a>
+      </div>
+    </div>
+
+    <!-- Payment Methods -->
+    <div style="flex: 1 1 180px; min-width: 180px;">
+      <h4 style="color: #00f9ff; margin-top: 20px;">Payment Methods</h4>
+      <div style="margin-top: 10px; display: flex; gap: 9px;">
+        <a href="payment.html" target="_blank"><img src="photos/mastercard.png" width="30px" alt="MasterCard" /></a>
+        <a href="payment.html" target="_blank"><img src="photos/paypal.png" width="30px" alt="PayPal" /></a>
+        <a href="payment.html" target="_blank"><img src="photos/UPI.png" alt="UPI" width="30px" /></a>
+        <a href="payment.html" target="_blank"><img src="photos/visa.png" width="30px" alt="Visa" /></a>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 0px; border-top: 1px solid #333; padding-top: 5px; color: #ffffff;">
+    © 2025 ITZAdarsh. All Rights Reserved.
+  </div>
+</footer>
+</html>

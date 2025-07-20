@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment</title>
+</head>
+<body style="text-align: center; padding-top: 100px; font-family: sans-serif;">
+  <h1>Payment</h1>
+  <!-- Razorpay script -->
+  <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QvGIICzsQ0GkZu" async> </script> </form>
+  <script>
+    document.getElementById('payBtn').onclick = function(e) {
+      var options = {
+        "key": "rzp_test_yourKeyId", // 👈 Replace with your Test Key ID
+        "amount": 500000, // Amount in paisa (₹5000.00)
+        "currency": "INR",
+        "name": "ITZAdarsh Pvt Ltd",
+        "description": "Payment for Services",
+        "image": "https://yourdomain.com/logo.png",
+        "handler": function (response){
+          alert("Payment Successful!\nPayment ID: " + response.razorpay_payment_id);
+        },
+        "prefill": {
+          "name": "Adarsh Kumar",
+          "email": "adarsh@example.com",
+          "contact": "9123456789"
+        },
+        "notes": {
+          "address": "Bhayander, Mumbai"
+        },
+        "theme": {
+          "color": "#0f0f1a"
+        }
+      };
+      var rzp = new Razorpay(options);
+      rzp.open();
+      e.preventDefault();
+    }
+  </script>
+</body>
+</html>

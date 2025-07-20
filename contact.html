@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* ======= Base Reset ======= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #222629; /* Main dark background */
+      color: #6B6E70; /* Light text color for readability */
+      line-height: 1.6;
+    }
+
+    /* ======= Header ======= */
+    header {
+      background-color: #2226291e;
+      padding: 5px;
+    }
+
+    .header1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 30px;
+      width: 30px;
+      border-radius: 30px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: #86C232;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #61892F;
+    }
+
+    /* ======= Typography ======= */
+    h1, h2, h3, h4, h5 {
+      color: #86C232;
+    }
+
+    /* ======= Contact Form ======= */
+    .container {
+      max-width: 100px auto;
+      margin: 100px auto;
+      padding: 40px 20px and 20px;
+      background-color: #1a1a2e;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00ffcc5e;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 42px;
+      color: #86C232;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 16px;
+      color: #cccccc;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background-color: #0f0f1a;
+      color: #ffffff;
+      transition: box-shadow 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      box-shadow: 0 0 10px #00ffcc80;
+    }
+
+    button {
+      background-color: #54880a;
+      color: #0f0f1a;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #8cfd02;
+      transform: scale(1.03);
+    }
+
+    .info {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .info p {
+      color: #aaaaaa;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .info a {
+      color: #86c232;
+      text-decoration: none;
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+
+    /* ======= Responsive Design ======= */
+    @media (max-width: 768px) {
+      .header1 {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .container {
+        padding: 3px 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header1">
+      <img src="photos/logo.webp" alt="ITZ Adarsh Logo" class="logo" />
+      <h1>ITZ Adarsh</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <div class="container" style="text-align: center;">
+    <h2>Contact Us</h2>
+    <p class="description">Have a question or want to discuss your project? Fill out the form below and we’ll get back to you shortly.</p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Subject" />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="info">
+      <p>📞 Call us at: <a href="tel:+919960416025">+91 9960416025</a></p>
+      <p>📧 Email: <a href="mailto:contact@itzadarsh.co.in">contact@itzadarsh.co.in</a></p>
+    </div>
+  </div>
+
+</body>
+
+<footer style="background-color: #222629; color: #86c232; font-family: sans-serif; padding: 15px 20px 60px 20px; border-top: 0.5px solid #6b6e70; font-size: 10px;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; align-items: flex-start;">
+
+    <div style="flex: 1 1 250px; min-width: 250px;">
+      <h2 style="color: #86c232; font-size: 24px;">ITZAdarsh</h2>
+      <p style="margin: 15px 0;">ITZAdarsh is a performance-driven digital agency offering websites, marketing & SEO services at India's most affordable rates.</p>
+    </div>
+
+    <div style="flex: 1 1 150px; min-width: 150px;">
+      <h4 style="color: #61892f; margin-bottom: 15px;">Company</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="about us.html" style="color: #86c232; text-decoration: none;">About Us</a></li>
+        <li><a href="contact.html" style="color: #86c232; text-decoration: none;">Contact Us</a></li>
+        <li><a href="index.html" style="color: #86c232; text-decoration: none;">Portfolio</a></li>
+        <li><a href="privacy-policy.html" style="color: #86c232; text-decoration: none;">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div style="flex: 1 1 150px; min-width: 150px;">
+      <h4 style="color: #61892f; margin-bottom: 15px;">Services</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: #86c232; text-decoration: none;">SEO Services</a></li>
+        <li><a href="#" style="color: #86c232; text-decoration: none;">Web Design</a></li>
+        <li><a href="#" style="color: #86c232; text-decoration: none;">Facebook Ads</a></li>
+        <li><a href="#" style="color: #86c232; text-decoration: none;">Content Marketing</a></li>
+      </ul>
+    </div>
+
+    <div style="flex: 1 1 150px; min-width: 150px;">
+      <h4 style="color: #61892f; margin-bottom: 15px;">Get Connected</h4>
+      <div style="margin-top: 10px; display: flex; gap: 10px;">
+        <a href="https://facebook.com" target="_blank"><img src="photos/facebook.png" alt="Facebook" style="width: 20px;"></a>
+        <a href="https://instagram.com" target="_blank"><img src="photos/instagram logo" alt="Instagram" style="width: 20px;"></a>
+        <a href="https://youtube.com" target="_blank"><img src="photos/Youtube.png" alt="YouTube" style="width: 20px;"></a>
+        <a href="https://twitter.com" target="_blank"><img src="photos/twitter logo.png" alt="Twitter" style="width: 20px;"></a>
+      </div>
+    </div>
+
+    <div style="flex: 1 1 150px; min-width: 150px;">
+      <h4 style="color: #61892f; margin-bottom: 15px;">Payment Methods</h4>
+      <div style="margin-top: 10px; display: flex; gap: 9px;">
+        <a href="payment.html" target="_blank"><img src="photos/mastercard.png" width="30px" alt="MasterCard" /></a>
+        <a href="payment.html" target="_blank"><img src="photos/paypal.png" width="30px" alt="PayPal" /></a>
+        <a href="payment.html" target="_blank"><img src="photos/UPI.png" alt="UPI" width="30px" /></a>
+        <a href="payment.html" target="_blank"><img src="photos/visa.png" width="30px" alt="Visa" /></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 10px; padding-top: 5px; padding-bottom: 5px;">
+    © 2025 ITZAdarsh. All Rights Reserved.
+  </div>
+</footer>
